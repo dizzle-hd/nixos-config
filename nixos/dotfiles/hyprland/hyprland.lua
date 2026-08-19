@@ -263,6 +263,7 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("~/.config/waybar/Scripts/launch.sh"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("~/.config/fuzzel/wallselect"))
+hl.bind(mainMod .. " + SHIFT + 4", hl.dsp.exec_cmd("grim")
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
