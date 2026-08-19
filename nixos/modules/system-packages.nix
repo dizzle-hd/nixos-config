@@ -17,6 +17,7 @@
 	hypridle
 	hyprlock
 	playerctl
+	hyprpicker
 
 	helium.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];

@@ -1,0 +1,4 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR __fish_initialized:4300
+SETUVAR fish_greeting:Hallo\x2c\x20Julian\x0aWillkommen\x20zur\u00fcck\x20an\x20deinem\x20Lieblingsort\x21\x20\x3a\x29

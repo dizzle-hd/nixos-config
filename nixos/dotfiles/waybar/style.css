@@ -1,5 +1,3 @@
-@import url("file:///home/julian/.config/waybar/colors.css");
-
 * {
     font-family: "Maple Mono NF";
     font-size: 14px;
@@ -14,7 +12,7 @@
 
 window#waybar {
     background: transparent;
-    color: @on_surface;
+    color: #d6dedc;
 }
 
 /* ================================
@@ -22,34 +20,34 @@ window#waybar {
    ================================ */
 
 #workspaces {
-    background: @surface_container;
+    background: #171c1d;
     margin-left: 12px;
     padding: 0 4px;
 
-    border: 1px solid @outline_variant;
+    border: 1px solid #293333;
 }
 
 #workspaces button {
     background: transparent;
-    color: @on_surface_variant;
+    color: #647472;
 
     padding: 0 9px;
     margin: 3px 1px;
 }
 
 #workspaces button:hover {
-    background: @surface_container_high;
-    color: @on_surface;
+    background: #202728;
+    color: #a4b2b0;
 }
 
 #workspaces button.active {
-    background: @primary;
-    color: @on_primary;
+    background: #4fa89f;
+    color: #101315;
 }
 
 #workspaces button.urgent {
-    background: @error;
-    color: @on_error;
+    background: #d66f72;
+    color: #101315;
 }
 
 /* ================================
@@ -57,13 +55,12 @@ window#waybar {
    ================================ */
 
 #clock {
-    background: @surface_container;
-
-    color: @primary;
+    background: #171c1d;
+    color: #a4b2b0;
 
     padding: 0 18px;
 
-    border: 1px solid @outline_variant;
+    border: 1px solid #293333;
 }
 
 /* ================================
@@ -71,19 +68,18 @@ window#waybar {
    ================================ */
 
 #custom-notifications {
-    background: @surface_container;
-
-    color: @primary;
+    background: #171c1d;
+    color: #a4b2b0;
 
     padding: 0 14px;
     margin-right: 12px;
 
-    border: 1px solid @outline_variant;
+    border: 1px solid #293333;
 }
 
 #custom-notifications:hover {
-    background: @surface_container_high;
-    color: @primary_fixed;
+    background: #202728;
+    color: #4fa89f;
 }
 
 /* ================================
@@ -91,12 +87,12 @@ window#waybar {
    ================================ */
 
 tooltip {
-    background: @surface_container;
-    color: @on_surface;
+    background: #171c1d;
+    color: #d6dedc;
 
-    border: 1px solid @outline;
+    border: 1px solid #354141;
 }
 
 tooltip label {
-    color: @on_surface;
+    color: #d6dedc;
 }
