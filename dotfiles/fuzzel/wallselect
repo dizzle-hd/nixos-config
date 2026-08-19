@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+WALLPAPER_DIR="$HOME/Bilder/Wallpapers"
+CACHE_FILE="$HOME/.cache/wallselect/wallpaper"
+
+mkdir -p "$(dirname "$CACHE_FILE")"
+
+SELECTED=$(find "$WALLPAPER_DIR" -maxdepth 1 -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.webp" -o -name "*.gif" -o -name "*.bmp" \) -printf "%f\n" | sort | fuzzel --dmenu --prompt="󰸉 Wallpaper " -w 35 -l 10)
+
+if [ -z "$SELECTED" ]; then
+    exit 0
+fi
+
+FULL_PATH="$WALLPAPER_DIR/$SELECTED"
+echo "$FULL_PATH" > "$CACHE_FILE"
+
+awww img "$FULL_PATH" \
+  --transition-type wave \
+  --transition-duration 2 \
+  --transition-fps 60 \
+  --transition-wave 20,20
+

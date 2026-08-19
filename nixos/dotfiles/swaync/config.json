@@ -1,0 +1,25 @@
+{
+  "positionX": "right",
+  "positionY": "top",
+
+  "layer": "overlay",
+  "layer-shell": true,
+  "layer-shell-cover-screen": false,
+
+  "fit-to-screen": false,
+
+  "control-center-width": 400,
+  "control-center-height": 600,
+
+  "control-center-margin-top": 10,
+  "control-center-margin-right": 10,
+  "control-center-margin-bottom": 10,
+  "control-center-margin-left": 10,
+
+  "notification-window-width": 500,
+
+  "keyboard-shortcuts": true,
+  "notification-grouping": true,
+  "hide-on-clear": false,
+  "hide-on-action": true
+}

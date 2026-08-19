@@ -1,0 +1,166 @@
+@import url("file:///home/julian/.config/swaync/colors.css");
+
+* {
+    font-family: "Maple Mono NF";
+    font-size: 14px;
+}
+
+/* =========================
+   Control Center
+   ========================= */
+
+.control-center {
+    background: alpha(@surface, 0.94);
+    color: @on_surface;
+
+    border: 1px solid alpha(@outline, 0.25);
+    border-radius: 0px;
+
+    padding: 14px;
+}
+
+/* =========================
+   Notification rows
+   ========================= */
+
+.notification-row {
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* =========================
+   Notifications
+   ========================= */
+
+.notification {
+    background: alpha(@surface_container, 0.95);
+    color: @on_surface;
+
+    border: 1px solid alpha(@outline_variant, 0.35);
+    border-radius: 0px;
+
+    margin: 6px 0;
+    padding: 12px;
+}
+
+.notification-content {
+    border-radius: 0px;
+}
+
+.notification-default-action,
+.notification-action {
+    border-radius: 0px;
+}
+
+.notification:hover {
+    background: @surface_container_high;
+    border-color: alpha(@primary, 0.45);
+}
+
+/* =========================
+   Notification text
+   ========================= */
+
+.summary {
+    color: @primary;
+    font-weight: bold;
+}
+
+.body {
+    color: @on_surface;
+}
+
+.app-name {
+    color: @on_surface_variant;
+    font-size: 11px;
+}
+
+/* =========================
+   Close button
+   ========================= */
+
+.close-button {
+    background: @surface_container_high;
+    color: @on_surface;
+
+    border-radius: 0px;
+    padding: 4px;
+}
+
+.close-button:hover {
+    background: @error;
+    color: @on_error;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+
+.widget-button {
+    background: @surface_container;
+    color: @on_surface;
+
+    border: 1px solid alpha(@outline_variant, 0.3);
+    border-radius: 0px;
+
+    padding: 8px;
+    margin: 3px;
+}
+
+.widget-button:hover {
+    background: @surface_container_high;
+    color: @primary;
+    border-color: alpha(@primary, 0.5);
+}
+
+/* =========================
+   DND
+   ========================= */
+
+.widget-dnd {
+    background: @surface_container;
+    color: @on_surface;
+
+    border-radius: 0px;
+}
+
+.widget-dnd:hover {
+    background: @surface_container_high;
+}
+
+/* =========================
+   Clear all
+   ========================= */
+
+.widget-label {
+    color: @on_surface_variant;
+}
+
+.widget-label:hover {
+    color: @primary;
+}
+
+/* =========================
+   Invisible scrollbar
+   ========================= */
+
+scrollbar {
+    opacity: 0;
+    background: transparent;
+    color: transparent;
+    border-color: transparent;
+}
+
+scrollbar slider {
+    opacity: 0;
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+scrollbar trough {
+    opacity: 0;
+    background: transparent;
+    border-color: transparent;
+}

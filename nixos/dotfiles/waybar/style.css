@@ -1,0 +1,102 @@
+@import url("file:///home/julian/.config/waybar/colors.css");
+
+* {
+    font-family: "Maple Mono NF";
+    font-size: 14px;
+    border-radius: 0;
+    border: none;
+    min-height: 0;
+}
+
+/* ================================
+   WAYBAR
+   ================================ */
+
+window#waybar {
+    background: transparent;
+    color: @on_surface;
+}
+
+/* ================================
+   WORKSPACES
+   ================================ */
+
+#workspaces {
+    background: @surface_container;
+    margin-left: 12px;
+    padding: 0 4px;
+
+    border: 1px solid @outline_variant;
+}
+
+#workspaces button {
+    background: transparent;
+    color: @on_surface_variant;
+
+    padding: 0 9px;
+    margin: 3px 1px;
+}
+
+#workspaces button:hover {
+    background: @surface_container_high;
+    color: @on_surface;
+}
+
+#workspaces button.active {
+    background: @primary;
+    color: @on_primary;
+}
+
+#workspaces button.urgent {
+    background: @error;
+    color: @on_error;
+}
+
+/* ================================
+   CLOCK
+   ================================ */
+
+#clock {
+    background: @surface_container;
+
+    color: @primary;
+
+    padding: 0 18px;
+
+    border: 1px solid @outline_variant;
+}
+
+/* ================================
+   NOTIFICATIONS
+   ================================ */
+
+#custom-notifications {
+    background: @surface_container;
+
+    color: @primary;
+
+    padding: 0 14px;
+    margin-right: 12px;
+
+    border: 1px solid @outline_variant;
+}
+
+#custom-notifications:hover {
+    background: @surface_container_high;
+    color: @primary_fixed;
+}
+
+/* ================================
+   TOOLTIPS
+   ================================ */
+
+tooltip {
+    background: @surface_container;
+    color: @on_surface;
+
+    border: 1px solid @outline;
+}
+
+tooltip label {
+    color: @on_surface;
+}
