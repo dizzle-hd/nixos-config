@@ -18,6 +18,11 @@
 	hyprlock
 	playerctl
 	hyprpicker
+	cava
+	overskride
+	bluez
+	mpv
+	pwgen
 
 	helium.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
