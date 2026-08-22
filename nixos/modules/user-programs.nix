@@ -1,5 +1,5 @@
 { config, pkgs, ... }: {
-  users.users.julian = {
+	users.users.Nex = {
     packages = with pkgs; [
 	obsidian
 	vscodium

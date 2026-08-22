@@ -11,7 +11,7 @@
     ];
  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  home-manager.users.julian = import ./home.nix;
+  home-manager.users.Nex = import ./home.nix;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -84,13 +84,11 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users."julian" = {
+  users.users."Nex" = {
     isNormalUser = true;
-    description = "Julian";
+    description = "Nex";
+    initialPassword = "802043";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ];
   };
 
   # Install firefox.

@@ -1,8 +1,8 @@
 { pkgs, ... }:
 
 {
-  home.username = "julian";
-  home.homeDirectory = "/home/julian";
+  home.username = "Nex";
+  home.homeDirectory = "/home/Nex";
   home.stateVersion = "26.05";
 
   xdg.configFile."hypr".source = ./dotfiles/hyprland;
